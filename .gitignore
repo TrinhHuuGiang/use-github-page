@@ -1,0 +1,7 @@
+
+# default MkDocs build website folder
+site/
+
+
+# custom build website folder
+build/
