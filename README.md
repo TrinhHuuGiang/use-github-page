@@ -1,6 +1,11 @@
 # use-github-page
 Try GitHub Page
 
+- README.md not available now. Default page generated at  
+    https://trinhhuugiang.github.io/use-github-page/
+- Generator: MkDocs
+- MkDocs root: `/docs`
+
 ---
 
 ## Catalogue

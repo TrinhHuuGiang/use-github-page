@@ -1,0 +1,46 @@
+# Build site and source folders
+docs_dir: "./mainpage/"
+site_dir: "./build/"
+
+# Site path
+site_url: "https://github.com/TrinhHuuGiang"
+
+# GitHub pages: using tools `gh-deploy`
+repo_url: "https://github.com/TrinhHuuGiang/use-github-page"
+repo_name: "GitHub: use-github-page"
+edit_uri: "./mainpage/"
+
+remote_branch: "publish-site"  
+remote_name:   "origin"
+
+# Site description
+site_name: "Main website name"
+site_description: "Note: how to use GitHub Pages and generate a site with MkDocs"
+
+site_author: "Giang Trinh"
+copyright: "&#169; 2026 Giang Trinh. All rights reserved."
+  
+# Theme
+theme:
+  name: windmill #windmill-dark
+  # color: dark
+  # user_color_mode_toggle: true
+  highlightjs: true # or false. En/disable highlight source in code block.
+  hljs_style: github # defaul is github
+  hljs_style_dark: github # github-dark. Change style when in dark mode.
+  # hljs_languages: # highlight some supported languages 
+  #           - yaml
+  #           - rust
+  shortcuts:      # define short cut key on keyboard (see Key code table)
+    help: 191       #/?
+    next: 78        #n
+    previous: 80    # p
+    search: 83      # s
+  navigation_depth: 2
+  locale: en        # language support for theme. If not support auto fallback to default designed theme locale.
+  # analytics:      # configuration options for an analytics service.
+  #   gtag: G-ABC123  # enable Google Analytics. Using G- format.
+
+
+
+# Navigation
