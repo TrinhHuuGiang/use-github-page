@@ -112,7 +112,11 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <li><code>repo_url</code>: default NULL, provides a link to your MkDocs repository (GitHub, Bitbucket, GitLab,...).</li>
 <li><code>repo_name</code>: provides the name for the link to your MkDocs repository on each page. Otherwise the hostname from the <code>repo_url</code>.</li>
 <li><code>edit_uri</code>: "/docs/" is default.<br />
-Change source path when the <code>docs_dir</code> changed.</li>
+Change source path when the <code>docs_dir</code> changed.  <ul>
+<li>The path from the base <code>repo_url</code> to the docs directory when directly viewing
+    a page, accounting for specifics of the repository host (e.g. GitHub, Bitbucket, etc), the branch, and the docs directory itself. MkDocs concatenates <code>repo_url</code> and <code>edit_uri</code>, and appends the input path of the page.</li>
+</ul>
+</li>
 </ul>
 <hr />
 <ul>
@@ -165,7 +169,7 @@ Set the remote branch to commit to when using <code>gh-deploy</code> to deploy t
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/TrinhHuuGiang/use-github-page/mainpage/chapters/note_mkdocs/_004_Implement_the_sites.md">Edit on GitHub: use-github-page</a>
+        <a href="https://github.com/TrinhHuuGiang/use-github-page/blob/master/mainpage/chapters/note_mkdocs/_004_Implement_the_sites.md">Edit on GitHub: use-github-page</a>
       </p><p>&#169; 2026 Giang Trinh. All rights reserved.</p>
   <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
