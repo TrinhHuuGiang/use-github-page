@@ -1,3 +1,9 @@
+# =============================================================
+# `mkdocs.yml` Part 1: MkDocs build site and site information: 
+# - YAML: https://en.wikipedia.org/wiki/YAML
+# =============================================================
+
+
 # Build site and source folders
 docs_dir: "./mainpage/"
 site_dir: "./build/"
@@ -36,13 +42,43 @@ theme:
     next: 78        #n
     previous: 80    # p
     search: 83      # s
-  navigation_depth: 2
+  navigation_depth: 4 # default 2
   locale: en        # language support for theme. If not support auto fallback to default designed theme locale.
   # analytics:      # configuration options for an analytics service.
   #   gtag: G-ABC123  # enable Google Analytics. Using G- format.
 
 
 
-# Navigation (devided into _2_mkdocs_nav.yml)
-# Navigation
+# Navigation (devided into _1_mkdocs_base.yml, _2_..._nav_....yml)
+# 
+# Note:
+# - All paths need to be relative to the `docs_dir` folder.
+# =============================================================
+# `mkdocs.yml` Part 2: Navication 
+# =============================================================
+
+# Navigation root
+
+nav:
+- "Host a free static website by GitHub Pages":
+  # - "Preface": "./index.md"
+  - "About me": "./about.md"
+  - "License": "./license.md"
+# =============================================================
+# `mkdocs.yml` Chap: GitHub Pages 
+# =============================================================
+
+  - "About GitHub Pages - Host your website on GitHub Pages":
+    - "GitHub Pages link": "./chapters/note_githubpage/_001_pagelink.md"
+
+# =============================================================
+# `mkdocs.yml` Chap: MkDocs 
+# =============================================================
+
+  - "About MkDocs - Static website generator from Markdown":
+    - "Install MkDocs": "./chapters/note_mkdocs/_001_install_mkdocs.md"
+    - "Create new": "./chapters/note_mkdocs/_002_create_new_project.md"
+    - "Site theme": "./chapters/note_mkdocs/_003_theme_for_pages.md"
+    - "Build website": "./chapters/note_mkdocs/_004_Implement_the_sites.md"
+
 

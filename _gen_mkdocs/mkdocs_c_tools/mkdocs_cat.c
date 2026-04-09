@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
         printf("Usage: %s [output_file] [input1] [input2 ...]\n", argv[0]);
         return 1;
     }
-
+        // open to write, truncate to 0 size, create new if not exist
     FILE *out = fopen(argv[1], "w");
     if (!out) {
         perror("Cannot open output file");
@@ -34,7 +34,8 @@ int main(int argc, char **argv) {
         }
     }
 
+
     fclose(out);
-    printf("Done! Output written to %s\n", argv[1]);
+    printf("Done! Output written to %s\n--------------------\n", argv[1]);
     return 0;
 }

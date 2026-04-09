@@ -24,15 +24,19 @@ Reason is most of web server only support main page is `index.html`.
 List of common key for `mkdocs.yml`:  
 `site-name`, `theme`, `nav`, `docs-dir`, `site-dir`.
 
-- [site-name](./_004_Implement_the_sites.md/#1-configuration-file-mkdocsyaml)(compulsory)
+- [site-name](./_004_Implement_the_sites.md/#1-configure-site-information)(compulsory)
 
 - [theme](./_003_theme_for_pages.md)
 
 - `nav` is a key with list of values are markdown files.
     - Example:
-        ``` text
+        ``` yml
             nav:
-                - index.md
+                    # Note with `index.md`: 
+                    #   I tested with some theme, index.md automatic display as default page. 
+                    #   While try add this one, page will miss navigation bar, olny index.html
+                    # Recommend comment index file while it display as default.
+                #- index.md  
                 - about.md
         ```
     - The title for source files can assign through as key to the left of specified file 

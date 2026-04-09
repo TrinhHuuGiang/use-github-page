@@ -1,0 +1,10 @@
+# =============================================================
+# `mkdocs.yml` Chap: MkDocs 
+# =============================================================
+
+  - "About MkDocs - Static website generator from Markdown":
+    - "Install MkDocs": "./chapters/note_mkdocs/_001_install_mkdocs.md"
+    - "Create new": "./chapters/note_mkdocs/_002_create_new_project.md"
+    - "Site theme": "./chapters/note_mkdocs/_003_theme_for_pages.md"
+    - "Build website": "./chapters/note_mkdocs/_004_Implement_the_sites.md"
+

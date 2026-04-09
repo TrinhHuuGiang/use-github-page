@@ -1,8 +1,20 @@
+## Catalogue
+Note that all commands must be executed in the directory containing this README file.
+
+- [mkdocs_cat](#mkdocs_cat): concatenate the content sections of `mkdocs.yml`
+    from separate configuration files
+    - Build: `gcc -o ./mkdocs_cat.run ./mkdocs_c_tools/mkdocs_cat.c`
+    - Run: 
+        - help: `./mkdocs_cat.run`
+        - cat : `./mkdocs_cat.run "../mkdocs.yml" [input_file1.yml] [input_file1.yml] ...`
+
+<hr><hr>
+
+## mkdocs_cat
+
 To make the file easier to read and avoid editing a large file,  
 `mkdocs.yml` is split into two parts: 
 - `_1_mkdocs_base.yml` and `_2_nav.yml`.
-
----
 
 If `_2_nav.yml` contains many smaller items and requires more  
 levels of management, you can create `_2_00i_nav_title` or `_2_0i_nav_title`...

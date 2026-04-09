@@ -1,3 +1,9 @@
+# =============================================================
+# `mkdocs.yml` Part 1: MkDocs build site and site information: 
+# - YAML: https://en.wikipedia.org/wiki/YAML
+# =============================================================
+
+
 # Build site and source folders
 docs_dir: "./mainpage/"
 site_dir: "./build/"
@@ -36,11 +42,14 @@ theme:
     next: 78        #n
     previous: 80    # p
     search: 83      # s
-  navigation_depth: 2
+  navigation_depth: 4 # default 2
   locale: en        # language support for theme. If not support auto fallback to default designed theme locale.
   # analytics:      # configuration options for an analytics service.
   #   gtag: G-ABC123  # enable Google Analytics. Using G- format.
 
 
 
-# Navigation (devided into _2_mkdocs_nav.yml)
+# Navigation (devided into _1_mkdocs_base.yml, _2_..._nav_....yml)
+# 
+# Note:
+# - All paths need to be relative to the `docs_dir` folder.

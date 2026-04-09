@@ -1,0 +1,11 @@
+# =============================================================
+# `mkdocs.yml` Part 2: Navication 
+# =============================================================
+
+# Navigation root
+
+nav:
+- "Host a free static website by GitHub Pages":
+  # - "Preface": "./index.md"
+  - "About me": "./about.md"
+  - "License": "./license.md"

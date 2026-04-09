@@ -1,0 +1,6 @@
+# =============================================================
+# `mkdocs.yml` Chap: GitHub Pages 
+# =============================================================
+
+  - "About GitHub Pages - Host your website on GitHub Pages":
+    - "GitHub Pages link": "./chapters/note_githubpage/_001_pagelink.md"
