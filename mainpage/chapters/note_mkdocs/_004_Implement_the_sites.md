@@ -46,3 +46,4 @@
 - Run the website local:
     - Without build: `mkdocs serve`
     - Build: `mkdocs build`
+- Push website to GitHub Pages branch
