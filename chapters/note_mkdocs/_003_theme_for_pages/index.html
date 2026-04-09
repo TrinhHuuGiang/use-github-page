@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Giang Trinh">
+    <link rel="canonical" href="https://github.com/TrinhHuuGiang/chapters/note_mkdocs/_003_theme_for_pages/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Site theme - Main website name</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "References", url: "#_top", children: [
+          ]},
+          {title: "Choosing theme", url: "#choosing-theme", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-link">
+        Build website
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../_002_create_new_project/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_002_create_new_project/" class="btn btn-xs btn-link">
+        Create new
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h4 id="references">References</h4>
+<ul>
+<li>Key code table: https://www.foreui.com/articles/Key_Code_Table.htm</li>
+<li>mkdoc theme:<ul>
+<li>Official: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes</li>
+<li>Third-party: https://github.com/mkdocs/catalog#-theming</li>
+</ul>
+</li>
+</ul>
+<h2 id="choosing-theme">Choosing theme</h2>
+<p>In <code>mkdocs.yml</code>, some basic tag setting for theme can be specified (depend on theme using, more optional tag can be used):</p>
+<pre><code class="language-yaml">    theme:
+        name: readthedocs
+            # Download: 
+            #   - [ pip install mkdocs-... ]
+            #   - [ pip install ... ]
+            # cinder, cluster, docskimmer,
+            # material, windmill, windmill-dark
+            # custommill, bootstrap, bootswatch
+            # bootstrap386, readthedocs,
+            # psinder, bootstrap4
+            # gitbook, ivory, lantana
+            # simple-blog, terminal
+
+
+        color_mode: light # dark, auto
+        user_color_mode_toggle: true # or false. En/disable toggle menu
+        nav-style: primary # dark, light
+        highlightjs: true # or false. En/disable highlight source in code block.
+        hljs_style: github # defaul is github
+        hljs_style_dark: github-dark # Change style when in dark mode.
+        hljs_languages: # highlight some supported languages 
+            - yaml
+            - rust
+        shortcuts:      # define short cut key on keyboard (see Key code table)
+            help: 191       #/?
+            next: 78        #n
+            previous: 80    # p
+            search: 83      # s
+        navigation_depth: 2     # default display maximum depth of the navigation tree 
+        locale: en      # language support for theme. If not support auto fallback to default designed theme locale.
+        analytics:      # configuration options for an analytics service.
+            gtag: G-ABC123  # enable Google Analytics. Using G- format.
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-link">
+        Build website
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../_002_create_new_project/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_002_create_new_project/" class="btn btn-xs btn-link">
+        Create new
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/TrinhHuuGiang/use-github-page/mainpage/chapters/note_mkdocs/_003_theme_for_pages.md">Edit on GitHub: use-github-page</a>
+      </p><p>&#169; 2026 Giang Trinh. All rights reserved.</p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

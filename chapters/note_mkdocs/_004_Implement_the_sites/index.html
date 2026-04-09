@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Giang Trinh">
+    <link rel="canonical" href="https://github.com/TrinhHuuGiang/chapters/note_mkdocs/_004_Implement_the_sites/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Build website - Main website name</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Refer", url: "#_top", children: [
+          ]},
+          {title: "Index:", url: "#index", children: [
+              {title: "1. Configure site information", url: "#1-configure-site-information" },
+              {title: "2. Deploy markdown to webpage", url: "#2-deploy-markdown-to-webpage" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../_003_theme_for_pages/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_003_theme_for_pages/" class="btn btn-xs btn-link">
+        Site theme
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h4 id="refer">Refer</h4>
+<ul>
+<li>https://www.toptal.com/designers/htmlarrows/symbols/</li>
+<li><a href="../_002_create_new_project/#2-mkdocsyml">mkdocs.yml basic keys</a></li>
+<li><a href="../_003_theme_for_pages/#choosing-theme">mkdocs.yml theme keys</a></li>
+</ul>
+<hr />
+<h3 id="index">Index:</h3>
+<ul>
+<li>
+<p><a href="#1-configure-site-information">Configure site information in mkdocs.yaml</a></p>
+</li>
+<li>
+<p>[extra_css]</p>
+</li>
+<li>[extra_javascript]</li>
+<li>
+<p>[extra_template]</p>
+</li>
+<li>
+<p><a href="">Deploy markdown to webpage</a></p>
+</li>
+</ul>
+<hr />
+<h5 id="1-configure-site-information">1. Configure site information</h5>
+<ul>
+<li>mkdocs help: <code>mkdocs build --help</code></li>
+<li>Specify another path for YAML configuration file:<br />
+<code>mkdocs build -f [cfg_file.yml]</code></li>
+<li><code>site_name</code> is compulsory field in configuration file<br />
+<code>site_name: Main website name</code></li>
+<li>
+<p>Other key:</p>
+<ul>
+<li><code>site_url</code>: default NULL, add a link with canonical URL (site mainpage, site homepage, or main page of a project). It better for Google optimize searching.</li>
+<li><code>repo_url</code>: default NULL, provides a link to your MkDocs repository (GitHub, Bitbucket, GitLab,...).</li>
+<li><code>repo_name</code>: provides the name for the link to your MkDocs repository on each page. Otherwise the hostname from the <code>repo_url</code>.</li>
+<li><code>edit_uri</code>: "/docs/" is default.<br />
+Change source path when the <code>docs_dir</code> changed.</li>
+</ul>
+<hr />
+<ul>
+<li><code>site_description</code> general description for website. Display while searching web on Google.</li>
+<li><code>site_author</code> Author of website.</li>
+<li><code>copyright</code> Copyright information.<br />
+    Example: &#169; <code>2026 Author. All rights reserved.</code></li>
+</ul>
+<hr />
+<ul>
+<li><code>remote_branch</code>: default <code>gh-pages</code>.<br />
+Set the remote branch to commit to when using <code>gh-deploy</code> to deploy to GitHub Pages. This option can be overridden by a command line option in <code>gh-deploy</code>.</li>
+<li><code>remote_name</code>: default <code>origin</code> in current GitHub repository.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="2-deploy-markdown-to-webpage">2. Deploy markdown to webpage</h5>
+<ul>
+<li>Run the website local:<ul>
+<li>Without build: <code>mkdocs serve</code></li>
+<li>Build: <code>mkdocs build</code></li>
+</ul>
+</li>
+<li>Push website to GitHub Pages branch</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../_003_theme_for_pages/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_003_theme_for_pages/" class="btn btn-xs btn-link">
+        Site theme
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/TrinhHuuGiang/use-github-page/mainpage/chapters/note_mkdocs/_004_Implement_the_sites.md">Edit on GitHub: use-github-page</a>
+      </p><p>&#169; 2026 Giang Trinh. All rights reserved.</p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
