@@ -14,7 +14,9 @@ site_url: "https://github.com/TrinhHuuGiang"
 # GitHub pages: using tools `gh-deploy`
 repo_url: "https://github.com/TrinhHuuGiang/use-github-page"
 repo_name: "GitHub: use-github-page"
-edit_uri: "./mainpage/"
+edit_uri: "./blob/master/mainpage/" 
+    # GitHub add /blob/[branch]/ in file link
+    # Full file link format: [repo_url] + /blob/[branch]/ + [docs_dir]
 
 remote_branch: "publish-site"  
 remote_name:   "origin"

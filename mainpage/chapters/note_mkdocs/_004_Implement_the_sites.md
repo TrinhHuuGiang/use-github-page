@@ -28,7 +28,9 @@
     - `repo_url`: default NULL, provides a link to your MkDocs repository (GitHub, Bitbucket, GitLab,...).
     - `repo_name`: provides the name for the link to your MkDocs repository on each page. Otherwise the hostname from the `repo_url`.
     - `edit_uri`: "/docs/" is default.  
-    Change source path when the `docs_dir` changed.
+    Change source path when the `docs_dir` changed.  
+        - The path from the base `repo_url` to the docs directory when directly viewing
+            a page, accounting for specifics of the repository host (e.g. GitHub, Bitbucket, etc), the branch, and the docs directory itself. MkDocs concatenates `repo_url` and `edit_uri`, and appends the input path of the page.
     ---
     - `site_description` general description for website. Display while searching web on Google.
     - `site_author` Author of website.
