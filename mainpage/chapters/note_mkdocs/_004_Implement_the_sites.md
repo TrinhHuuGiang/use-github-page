@@ -12,7 +12,7 @@
 - [extra_javascript]
 - [extra_template]
 
-- [Deploy markdown to webpage]()
+- [Deploy markdown to webpage](#2-deploy-markdown-to-webpage)
 
 ---
 
@@ -48,4 +48,5 @@
 - Run the website local:
     - Without build: `mkdocs serve`
     - Build: `mkdocs build`
-- Push website to GitHub Pages branch
+- Push website to GitHub Pages branch, after configured `remote_branch`, `remote_name` in `mkdocs.yml`:
+    - Build and push to git branch: `mkdocs gh-deploy`
