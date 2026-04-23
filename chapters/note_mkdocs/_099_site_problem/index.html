@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://github.com/TrinhHuuGiang/chapters/note_mkdocs/_099_site_problem/">
     <link rel="shortcut icon" href="../../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title> 099 site problem - Main website name</title>
+    <title>Some writing problems - Main website name</title>
     <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../../css/base.css" rel="stylesheet">
@@ -55,6 +55,23 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_004_Implement_the_sites/" class="btn btn-xs btn-link">
+        Build website
+      </a>
+    </div>
+    
+  </div>
+
+    
 
     <h2 id="some-problems-with-mkdocs">Some problems with MkDocs</h2>
 <p>When writing documents with MkDocs, here are some differences in display and configuration compared with some common Markdown viewer on VS code or third parties.</p>
@@ -81,11 +98,15 @@ but result may showing like this; right example is similar with reversed case:</
     - d         |   4. d
 </code></pre>
 <p><strong>Reason:</strong> Trouble in switching tabs to spaces in text editors. <code>Python Markdown</code> requires each <code>tab == 4 space</code></p>
-<p><strong>Solution:</strong>
-1. using extension: https://github.com/squidfunk/mkdocs-material/discussions/8092
-2. 4 space indent:
-    - https://github.com/squidfunk/mkdocs-material/issues/6509?issue=Python-Markdown%7Cmarkdown%7C451
-    - fix default tab to space in VS code: https://stackoverflow.com/questions/29972396/how-can-i-customize-the-tab-to-space-conversion-factor-in-vs-code</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>using extension: https://github.com/squidfunk/mkdocs-material/discussions/8092</li>
+<li>4 space indent:<ul>
+<li><a href="https://github.com/squidfunk/mkdocs-material/issues/6509?issue=Python-Markdown%7Cmarkdown%7C451">git issue</a></li>
+<li><a href="https://stackoverflow.com/questions/29972396/how-can-i-customize-the-tab-to-space-conversion-factor-in-vs-code">fix default tab to space in VS code</a></li>
+</ul>
+</li>
+</ol>
 <h3 id="cant-find-resource-file-while-coding-raw-html-in-markdown">Can't find resource file while coding raw HTML in markdown</h3>
 <p>MkDocs by default convert <code>markdown file</code> into <code>index.html</code> file inside <code>folder</code> with name similar to markdown file name.</p>
 <pre><code class="language-txt">    markdown.md inside folder A will convert into:
@@ -96,15 +117,36 @@ but result may showing like this; right example is similar with reversed case:</
 <pre><code class="language-txt">    http:// ... /doc/markdown/ 
 </code></pre>
 <p>The Web browser has merchanism automatically find <code>index.html</code> as default while URL is an folder. </p>
-<p><strong>Solution:</strong>
-- [see the issue]https://github.com/mkdocs/mkdocs/issues/991
-    1. Prepend extra <code>../</code> into resource link.<br />
-    The limitation is it can't found right link on VS Code or some markdown parser. 
-    2. Set <code>use_directory_urls=false</code> in <code>mkdocs.yml</code><br />
-    The limitation is generated files are <code>Markdown name + .html tail</code></p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li><a href="https://github.com/mkdocs/mkdocs/issues/991">see the issue</a><ol>
+<li>Prepend extra <code>../</code> into resource link.<br />
+The limitation is it can't found right link on VS Code or some markdown parser. </li>
+<li>Set <code>use_directory_urls=false</code> in <code>mkdocs.yml</code><br />
+The limitation is generated files are <code>Markdown name + .html tail</code></li>
+</ol>
+</li>
+</ul>
 
   <br>
     
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../_004_Implement_the_sites/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../_004_Implement_the_sites/" class="btn btn-xs btn-link">
+        Build website
+      </a>
+    </div>
+    
+  </div>
 
     <br>
 </div>
