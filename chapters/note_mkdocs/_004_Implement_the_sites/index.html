@@ -94,7 +94,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>[extra_template]</p>
 </li>
 <li>
-<p><a href="">Deploy markdown to webpage</a></p>
+<p><a href="#2-deploy-markdown-to-webpage">Deploy markdown to webpage</a></p>
 </li>
 </ul>
 <hr />
@@ -141,7 +141,10 @@ Set the remote branch to commit to when using <code>gh-deploy</code> to deploy t
 <li>Build: <code>mkdocs build</code></li>
 </ul>
 </li>
-<li>Push website to GitHub Pages branch</li>
+<li>Push website to GitHub Pages branch, after configured <code>remote_branch</code>, <code>remote_name</code> in <code>mkdocs.yml</code>:<ul>
+<li>Build and push to git branch: <code>mkdocs gh-deploy</code></li>
+</ul>
+</li>
 </ul>
 
   <br>
